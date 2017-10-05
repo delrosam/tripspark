@@ -1,0 +1,141 @@
+body { 
+  background: #ECEFF1; 
+  color: rgba(0,0,0,0.87); 
+  font-family: Roboto, Helvetica, Arial, sans-serif; 
+  margin: 0; 
+  padding: 0; 
+}
+h1{
+  font-size: 45px;
+  font-weight: 700;
+  color: rgba(0,0,0,0.8);
+  margin: 0 0 16px;
+}
+h2 { 
+  font-size: 30px; 
+  font-weight: 500; 
+  color: rgba(0,0,0,0.7); 
+  margin: 0 0 16px;
+}
+h3 { 
+  font-size: 22px; 
+  font-weight: 400; 
+  color: rgba(0,0,0,0.6); 
+  margin: 0 0 16px;
+}
+h4 { 
+  color: #ffa100; 
+  font-weight: bold; 
+  font-size: 16px; 
+  margin: 0 0 8px;
+}
+.inverse-color{
+  color:#d0cfcf;
+}
+
+/*Nav Bar Styling */
+.navbar{
+  border-radius: 0px;
+  margin-bottom:0px;
+  background:#404040;
+}
+
+.team-logo{
+  width:60%;
+}
+
+.link{
+  padding:0px 30px;
+}
+.link a{
+  text-decoration: none;
+  color:#404040;
+}
+.content-area{
+  padding:30px 150px;
+}
+
+.color-block-dark{
+  background:#0078aa;
+}
+.color-block-darker{
+  background:#404040;
+}
+
+.add-background-img{
+  background-image: url('https://resource.alaskaair.net/~/media/Images/flight-plan/SFO_image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#card { 
+  /*background: white; */
+  max-width: 360px; 
+  margin: 20px auto 16px;
+  padding: 32px 24px; 
+  border-radius: 3px;
+}
+#card p { 
+  line-height: 140%;
+  margin: 16px 0 24px; 
+  font-size: 14px; 
+}
+
+a.round-btn { 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 15px;
+  padding: 10px 30px;
+  text-align: center;
+  background: #ECEFF1;
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+}
+a.footer-link{
+  text-decoration: none;
+  color:#9d9d9d;
+}
+a.footer-link:hover{
+  color:#fff;
+}
+
+/*#card { 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); 
+  border-bottom: 5px solid transparent;
+}
+#card:hover {
+
+  border-bottom: 5px solid #ffa100;
+} */
+
+.border-left{
+  border-left:2px solid #fff;
+}
+.pad-left80{
+  padding-left:80px;
+}
+.pad-right80{
+  padding-right:80px;
+}
+#fine-print { 
+  color: rgba(0,0,0,0.4); 
+  text-align: center; 
+  font-size: 11px;
+}
+
+@media (max-width: 600px) {
+  body, #card { margin-top: 0; background: white; box-shadow: none; }
+  body { border-top: 10px solid #ffa100; }
+  .content-area{padding:20px;}
+
+  .pad-right80{
+    padding-right:0px;
+    padding:30px;
+    text-align: left;
+  }
+  .pad-left80{
+    padding-left:0px;
+    border-left:none;
+  }
+
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.4.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.4.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.4.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.4.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.4.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- GLOBAL Style -->
+    <link rel="stylesheet" type="text/css" href="global.css">
+
+
+      <script type="text/javascript">
+    jQuery(document).ready(function(){
+      /*add class click over the menu buttom and remove if reclick*/
+      jQuery(".wrapper .menu").addClass("hideMe");
+      
+      jQuery('.show-menu').click(function(e){
+        e.stopPropagation();
+        jQuery('.wrapper').toggleClass('view-menu');
+        jQuery(".wrapper .menu").removeClass("hideMe");
+      });
+      /*remove class if you click over the content page*/
+      jQuery('.container').click(function(){
+         jQuery('.wrapper').removeClass('view-menu');
+        jQuery(".wrapper .menu").addClass("hideMe");
+      });
+    });
+    
+    jQuery(window).scroll(function (event) {
+      var scroll = $(window).scrollTop();
+      console.log(scroll);
+      if(scroll >= 430){
+        jQuery(".horizontal_logo").removeClass("hideLogo");
+      }else{
+        jQuery(".horizontal_logo").addClass("hideLogo");
+      }
+    });
+    
+  </script>
+
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-inverse bg-inverse sticky-top">
+      <!--<a class="navbar-brand" href="#"><img class="team-logo" src="img/LogoReduced.png" alt="Triple Spark Design Logo" /></a>
+       <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Contact</button>
+      </div>-->
+    </nav>
+
+
+
+
+    <div class="container-fluid content-area color-block-dark">
+      <p class="lead text-center"><span class="link"><a href="#" target="_self">Home</a></span>|<span class="link"><a href="#" target="_self">About</a></span>|<span class="link"><a href="#" target="_self">Our Work</a></span>|<span class="link"><a href="#" target="_self">Contact</a></span></p>
+    </div>
+
+
+    <div class="container-fluid content-area color-block-dark">
+      <div class="text-center">
+        <h1>Triple Spark Design</h1>
+        <p class="lead">This section is dedicated to a summary and/or description of the current page. The homepage has a brief summary of the services we offer as well as a few buttons linking to the different pages of the website. Background is color blocking with a faded image appropriate for each page.</p>
+        <a class="round-btn" target="_blank" href="https://firebase.google.com/docs/hosting/">Contact</a>
+      </div>
+    </div>
+
+
+    <div class="container-fluid content-area">
+      <div class="text-center">
+        <h2>Services we can offer</h2>
+        <p class="lead">Quick description of the services we can offer and a little bit about us.</p>
+      </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="col-md-4 text-center">
+                <div id="card">
+                  <h3>About Us</h3>
+                  <p>We are a small caring team that likes to get to know our clients so we can help create the best solution for each person.</p>
+                  <a class="round-btn" target="_blank" href="#">About Us</a>
+                </div>
+                <p id="fine-print">Firebase SDK Loading&hellip;</p>
+        </div>
+        <div class="col-md-4 text-center">
+                <div id="card">
+                  <h3>What we have done</h3>
+                  <p>If you would like an example of some of our work you can check out a few of our previous projects.<br /><br /></p>
+                  <a class="round-btn" target="_blank" href="#">Our Work</a>
+                </div>
+                <p id="fine-print">Firebase SDK Loading&hellip;</p>
+
+        </div>
+        <div class="col-md-4 text-center">
+                <div id="card">
+                  <h3>Interested in learning more?</h3>
+                  <p>If you would like to speak with us, we would be happy to talk to you and help you decide if our services are right for you.</p>
+                  <a class="round-btn" target="_blank" href="#">Contact</a>
+                </div>
+                <p id="fine-print">Firebase SDK Loading&hellip;</p>
+
+        </div>
+    </div>
+
+
+
+    <footer class="container-fluid content-area color-block-darker inverse-color">
+       <div class="col-md-4 text-right pad-right80">
+          <h3 class="inverse-color"><img class="team-logo" src="img/LogoReduced.png" alt="Triple Spark Design Logo" /></h3>
+          <p><a class="footer-link" href="#">(555)555-555</a></p>
+          <p><a class="footer-link" href="mailto:email@email.com">Email@email.com</a></p>
+       </div>
+       <div class="col-md-8">
+         <div class="col-sm-4 border-left text-left pad-left80">
+            <h3 class="inverse-color">Our Work</h3>
+            <p><a class="footer-link" href="#">WordPlay</a></p>
+            <p><a class="footer-link" href="#">Website 2</a></p>
+            <p><a class="footer-link" href="#">Website 3</a></p>
+            <p><a class="footer-link" href="#">Website 4</a></p>
+         </div>
+         <div class="col-sm-4 text-left pad-left80">
+            <h3 class="inverse-color">Our Team</h3>
+            <p><a class="footer-link" href="#">Verna</a></p>
+            <p><a class="footer-link" href="#">Marnel</a></p>
+            <p><a class="footer-link" href="#">Nick</a></p>
+         </div>
+         <div class="col-sm-4 text-left pad-left80">
+            <h3 class="inverse-color">Social Media</h3>
+            <p><a class="footer-link" href="#">Facebook</a></p>
+            <p><a class="footer-link" href="#">LinkedIn</a></p>
+         </div>
+       </div>
+    </footer> 
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>
