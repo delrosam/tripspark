@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to Firebase Hosting</title>
 
+
+    <script src="js/jquery-3.2.1.min.js"></script>
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/4.4.0/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -15,6 +17,8 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
 
+    
+
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -23,65 +27,67 @@
 
 
       <script type="text/javascript">
-    jQuery(document).ready(function(){
-      /*add class click over the menu buttom and remove if reclick*/
-      jQuery(".wrapper .menu").addClass("hideMe");
+            jQuery(window).scroll(function(event) {
+              var sticky = $('#nav-wrapper');
+              var belowSticky = $('#blue-area');
 
-      jQuery('.show-menu').click(function(e){
-        e.stopPropagation();
-        jQuery('.wrapper').toggleClass('view-menu');
-        jQuery(".wrapper .menu").removeClass("hideMe");
-      });
-      /*remove class if you click over the content page*/
-      jQuery('.container').click(function(){
-         jQuery('.wrapper').removeClass('view-menu');
-        jQuery(".wrapper .menu").addClass("hideMe");
-      });
-    });
+              console.log(belowSticky.scrollTop());
+              
+              if (belowSticky.position().top - jQuery(window).scrollTop() < 0) {
+                if (!sticky.data('fixed')) {
+                  sticky.addClass('fixed');
+                  sticky.data('fixed', true);
+                }
+              }else if(sticky.data('fixed')) {
+                sticky.removeClass('fixed');
+                sticky.data('fixed', false);
 
-    jQuery(window).scroll(function (event) {
-      var scroll = $(window).scrollTop();
-      console.log(scroll);
-      if(scroll >= 430){
-        jQuery(".horizontal_logo").removeClass("hideLogo");
-      }else{
-        jQuery(".horizontal_logo").addClass("hideLogo");
-      }
-    });
-
-  </script>
+              }
+            });
+      </script>
 
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md navbar-inverse bg-inverse sticky-top">
-      <!--<a class="navbar-brand" href="#"><img class="team-logo" src="img/LogoReduced.png" alt="Triple Spark Design Logo" /></a>
-       <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+    <div class="header">
+      <div class="company-logo">
+        <a class="navbar-brand" href="#"><img class="team-logo" src="img/sparklogo_v2.png" alt="Triple Spark Design Logo" /></a>
+      </div>
+     <!--  <div class="navbar-collapse collapse" id="navbarCollapse" style="">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Contact</button>
       </div>-->
-    </nav>
-
-
-
-
-    <div class="container-fluid content-area color-block-dark">
-      <p class="lead text-center"><span class="link"><a href="#" target="_self">Home</a></span>|<span class="link"><a href="#" target="_self">About</a></span>|<span class="link"><a href="#" target="_self">Our Work</a></span>|<span class="link"><a href="#" target="_self">Contact</a></span></p>
+ 
     </div>
 
 
-    <div class="container-fluid content-area color-block-dark">
-      <div class="text-center">
-        <h1>Moved Files</h1>
-        <p class="lead">This section is dedicated to a summary and/or description of the current page. The homepage has a brief summary of the services we offer as well as a few buttons linking to the different pages of the website. Background is color blocking with a faded image appropriate for each page.</p>
-        <a class="round-btn" target="_blank" href="https://firebase.google.com/docs/hosting/">Contact</a>
+    <div id="nav-wrapper" class="bgimg-1 container-fluid nav-section">
+
+      <div class="bgcolor-overlay">
+          <div class="nav-div text-center scrollmenu">
+                <a class="link" id="linkOne" href="#">Home</a>
+                <a class="link" id="linkTwo" href="#">About</a>
+                <a class="link" id="linkThree" href="#">Our Work</a>
+                <a class="link" id="linkFour" href="#">Contact</a>
+          </div>
+      </div>
+
+    </div>
+
+    <div id="blue-area" class="bgimg-1 container-fluid">
+      <div class="bgcolor-overlay">
+        <div class="text-center intro-div">
+          <h2 class="inverse-color">In need of some web or graphic design?</h2>
+          <p class="lead">Welcome to TripleSpark, we are a professional Web and graphic design group. Chances are you are in need of a catchy new website, or you stumbled here on accident. Either way please have a look around and if you have any questions or would like to speak with us about our services don't hesitate to hit that contact button!</p>
+          <a class="round-btn" target="_blank" href="https://firebase.google.com/docs/hosting/">Contact</a>
+        </div>
       </div>
     </div>
 
 
-    <div class="container-fluid content-area">
-      <div class="text-center">
+    <div id="services-section" class="container-fluid content-area">
+      <div class="text-center services">
         <h2>Services we can offer</h2>
-        <p class="lead">Quick description of the services we can offer and a little bit about us.</p>
+        <p class="lead">At TripleSpark we specialize in web design, we pride ourselves in producing website's that run well, display what you need, and look like a million bucks. If a fell website isn't your jam, we can also help you with advertising assets, logos designs or various other services- just ask us! If a project falls outside of our expertese we will gladly point you in the direction to best serve you.</p>
       </div>
     </div>
 
@@ -89,37 +95,40 @@
     <div class="container-fluid">
         <div class="col-md-4 text-center">
                 <div id="card">
-                  <h3>About Us</h3>
-                  <p>We are a small caring team that likes to get to know our clients so we can help create the best solution for each person.</p>
-                  <a class="round-btn" target="_blank" href="#">About Us</a>
+                  <h3 class="blue-text-color">About Us</h3>
+                  <p class="card-copy">We are a small caring team that likes to get to know our clients so we can help create the best solution for each person.</p>
+                  <a class="round-btn-inverse" target="_blank" href="#">About Us</a>
                 </div>
-                <p id="fine-print">Firebase SDK Loading&hellip;</p>
+              <!--   <p id="fine-print">Firebase SDK Loading&hellip;</p> -->
         </div>
         <div class="col-md-4 text-center">
                 <div id="card">
-                  <h3>What we have done</h3>
-                  <p>If you would like an example of some of our work you can check out a few of our previous projects.<br /><br /></p>
-                  <a class="round-btn" target="_blank" href="#">Our Work</a>
+                  <h3 class="blue-text-color">What we have done</h3>
+                  <p class="card-copy">If you would like an example of some of our work you can check out a few of our previous projects.<br /><br /></p>
+                  <a class="round-btn-inverse" target="_blank" href="#">Our Work</a>
                 </div>
-                <p id="fine-print">Firebase SDK Loading&hellip;</p>
+                <!-- <p id="fine-print">Firebase SDK Loading&hellip;</p> -->
 
         </div>
         <div class="col-md-4 text-center">
                 <div id="card">
-                  <h3>Interested in learning more?</h3>
-                  <p>If you would like to speak with us, we would be happy to talk to you and help you decide if our services are right for you.</p>
-                  <a class="round-btn" target="_blank" href="#">Contact</a>
+                  <h3 class="blue-text-color">Interested in learning more?</h3>
+                  <p class="card-copy">If you would like to speak with us, we would be happy to talk to you and help you decide if our services are right for you.</p>
+                  <a class="round-btn-inverse" target="_blank" href="#">Contact</a>
                 </div>
-                <p id="fine-print">Firebase SDK Loading&hellip;</p>
+                <!-- <p id="fine-print">Firebase SDK Loading&hellip;</p> -->
 
         </div>
     </div>
 
 
 
-    <footer class="container-fluid content-area color-block-darker inverse-color">
+
+
+
+    <footer class="container-fluid content-area color-block-darker inverse-color footer-section">
        <div class="col-md-4 text-right pad-right80">
-          <h3 class="inverse-color"><img class="team-logo" src="img/LogoReduced.png" alt="Triple Spark Design Logo" /></h3>
+          <img class="team-logo" src="img/sparklogo_v2.png" alt="Triple Spark Design Logo" />
           <p><a class="footer-link" href="#">(555)555-555</a></p>
           <p><a class="footer-link" href="mailto:email@email.com">Email@email.com</a></p>
        </div>
@@ -167,6 +176,11 @@
           document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
         }
       });
+
+
+
+
+
     </script>
   </body>
 </html>
