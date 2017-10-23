@@ -173,6 +173,13 @@ div.scrollmenu a:hover {
   margin: 16px 0 24px; 
   font-size: 14px; 
 }
+p.persons-role{
+  font-size:18px !important;
+  margin:0px !important;
+}
+h3.person-name{
+  margin:0px !important;
+}
 
 .pad-left80 p,
 .pad-right80 p{
@@ -231,9 +238,17 @@ a.footer-link:hover{
 #services-section{
   border-top:8px solid #fff;
 }
+input.form-control,
+textarea.form-control{
+  width:80%;
+}
 
 
 @media (max-width: 600px) {
+  input.form-control,
+  textarea.form-control{
+    width:100% !important;
+  }
   .bgcolor-overlay{
     padding:2% 10% 15% 10%;
   }
