@@ -1,0 +1,90 @@
+***********************************************
+                     HOME
+***********************************************
+
+========
+Title
+========
+<h1>In need of some web or graphic design?</h1>
+
+<p>Welcome to <b>TripleSpark</b>, we are a professional <strong>Web</strong> and <strong>graphic design group.</strong> Chances are you are in need of a catchy new website, or you stumbled here on accident. Either way please have a look around and if you have any questions or would like to speak with us about our services don’t hesitate to hit that <a href="#"><b>contact</b></a>button!</p>
+========
+Content
+========
+<h2>Services we can offer</h2>
+<p>At <b>TripleSpark</b> we specialize in <strong>web design</strong>, we pride ourselfs in producing website’s that run well, display what you need, and look like a million bucks. If a full website isn’t your jam we can also help you with <b>advertising assets</b>, <b>logo designs</b> or various other services- <a href="#">just ask us</a>! If a project falls outside of our expertese we will gladly point you in the direction to best serve you.</p>
+
+<h3>Who We Are</h3>
+<p>We are a small caring team that likes to get to know our clients so we can help create the best solution for each person.</p>
+
+
+<h3>what We Have Done</h3>
+<p>If you would like an example of some of our work you can check out a few of our previous projects.</p>
+
+
+<h3>Get in Touch</h3>
+<p>If you would like to speak with us we would be happy to talk to you and help you decidee if our services are right for you.</p>
+
+***********************************************
+                     About
+***********************************************
+
+========
+Title
+========
+<h1>About Us</h1>
+
+<p><b>TripleSpark Design</b> is a <strong>web design</strong> group consisting of a few professionals making a name for ourselves in the wide tech world. Our <b>customers</b> are our top priority and their <b>satisfaction</b> is what we strive for in every project we accept. Each team member specializes in what they do so you can be assured every aspect of the website being built is coming from someone with experience and talent. Don’t let that fool you into thinking the process is broken up- We are a family and constantly communicate to ensure the project runs smoothly. Take a look below to get to know our staff.</p>
+
+========
+Content
+========
+<h2>Meet Our Staff</h2>
+
+<h3>Verna</h3>
+<h4>Head of Customer Relations</h4>
+<p>Verna is our customer relations specialist and most likely the first person you will talk to. She is stellar at making you feel comfortable and giving you all the information you need to know and can help you decide if we are the right choice for you. </p>
+
+<h3>Nicholas</h3>
+<h4>Lead Designer</h4>
+<p>A good website looks slick, displays information effectively, and can be navigated easily. Nick has an extensive background doing this and will work with you to make sure you get a website site that you love athstetically but still functions effectivly.</p>
+
+<h3>Marnel</h3>
+<h4>Lead Developer</h4>
+<p>Years of experience in front end development have put Marnel at the top of the game; he is the one who will make your website dreams a reality. He can code your site to a professional indusrty standard, running flawlessly and easy to manage in the future.</p>
+
+***********************************************
+                   Our Work
+***********************************************
+
+========
+Title
+========
+<h1>Our Work</h1>
+<p><strong>Web design</strong> is our passion and would love the opportunity to help you however we can. Our services include the following- <i><b>Full Website Design:</b></i> starting from scratch we work with you to create the website you want; <i><b>Re-designs:</b></i> using your existing site/content and creating a sharp new layout for it; <i><b>Graphic Design:</b></i> everything from logo design to assets for advertising* <i><b>Search Engine Optimization:</b></i> giving your site a better chance of being found by customers. Or if you don’t see what you’re looking for here just <a href="#">contact us</a>, we’ll tell you if we can do it or point you in the direction of someone who can. <br /><small>*we are not an advertising agency, we are happy to offer suggestions from our experience and create assets for a campaign but do not guarentee campaign success or offer the advertising services themselves.</small> </p>
+========
+Content
+========
+<h2>Here are some examples of the work we have done.</h2>
+
+<h3>Kosenkranius Design</h3>
+<p>This is our lead designers portfolio site. Designed and built to showcase his design work, display his resume and organize projects that he has and is currently working on.</p>
+<a href="nick.kosenkranius.com" target="_blank">Nick.Kosenkranius.com</a>
+
+
+***********************************************
+                   Contact
+***********************************************
+
+========
+Title
+========
+<h1>Contact Us</h1>
+<p>Thanks for reaching out to us! If you’re an existing client with a question or someone interested in what we can do please don’t hesitate to get in touch. Here’s a few ways to get in touch:</p>
+<a href="tel:1-XXX-XXX-XXXX">Phone: XXX-XXX-XXXX</a>
+<a href="mailto:TripleSparkDesign@gmail.com">Email: TripleSparkDesign@gmail.com</a>
+
+========
+Content
+========
+<h2>Or Submit a Question Here</h2>

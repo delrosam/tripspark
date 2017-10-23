@@ -1,0 +1,285 @@
+body { 
+  background: #e7d8ad; 
+  color: rgba(0,0,0,0.87); 
+  font-family: Roboto, Helvetica, Arial, sans-serif; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.bgimg-1.container-fluid.nav-section{
+  padding:55px 0px 0px 0px;
+  display: block;
+}
+.bgimg-1.container-fluid{
+  padding:0px;
+}
+.bgimg-1 {
+  position: relative;
+  opacity: 0.95;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("titlebackground_keyboard.jpg");
+  /*min-height: 100%;*/
+  background-position:top center;
+}
+
+.bgimg-divider{
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("divider.png");
+  /*min-height: 100%;*/
+  background-position:top center;
+}
+
+.nav-section .bgcolor-overlay{
+  padding:10px 2% 10px 2%;
+}
+.bgcolor-overlay{
+  background-color:rgba(6, 100, 154, 0.70);
+  padding:2% 10% 5% 10%;
+}
+h1{
+  font-size: 45px;
+  font-weight: 700;
+ /* color: rgba(0,0,0,0.8);*/
+ color:#fff;
+  margin: 0 0 16px;
+}
+h2{ 
+  font-size: 24px; 
+  font-weight: 500; 
+  margin: 0 0 16px;
+}
+h3{ 
+  font-size: 22px; 
+  font-weight: 400; 
+  color: rgba(0,0,0,0.6); 
+  margin: 0 0 16px;
+}
+h4{ 
+  color: #ffa100; 
+  font-weight: bold; 
+  font-size: 16px; 
+  margin: 0 0 8px;
+}
+p{
+  line-height: 1.8;
+}
+.blue-text-color{
+  color: #06649a;
+}
+.card-copy:before{
+  content:"";
+  position:absolute;
+  width:290px;
+  border-bottom:1px solid #474545;
+  top:82px;
+}
+.lead{
+  font-size:18px;
+  line-height: 1.8;
+}
+
+.company-logo{
+  display:inline-block;
+}
+.nav-div{
+  display: block;
+  /*background-color:rgba(0, 120, 170, 0.70);*/
+  margin:0 auto;
+}
+#nav-wrapper{
+  width:100%;
+  z-index:2;
+}
+#nav-wrapper.fixed{
+  position: fixed;
+}
+
+.intro-div{
+  color:#fff;
+  padding:20px 17% 0px 17%;
+}
+.services{
+  padding:2% 17% 0% 17%;
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 2px 20px;
+  text-decoration: none;
+  font-size:18px;
+}
+
+div.scrollmenu a:hover {
+  background-color: #fff;
+  color:rgba(0, 120, 170, 1);
+}
+
+.nav-div .link a,
+.nav-div .nav-items{
+  color:#fff;
+}
+.inverse-color{
+  color:#ffffff;
+}
+
+/*Nav Bar Styling */
+.header{
+  border-radius: 0px;
+  margin-bottom:0px;
+  background:#535353;
+  width:100%;
+  position: fixed;
+  z-index: 3;
+}
+
+.team-logo{
+  width:60%;
+}
+
+.link{
+  padding:0px 30px;
+}
+
+
+.content-area{
+  padding:30px 150px;
+}
+
+.color-block-darker{
+  background:#535353;
+}
+
+
+
+#card { 
+  /*background: white; */
+  max-width: 360px; 
+  margin: 20px auto 16px;
+  padding: 32px 24px; 
+  border-radius: 3px;
+}
+#card p { 
+  margin: 16px 0 24px; 
+  font-size: 14px; 
+}
+
+.pad-left80 p,
+.pad-right80 p{
+  line-height: 1.2;
+}
+a.round-btn { 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 20px;
+  padding: 5px 40px;
+  text-align: center;
+  background: #ECEFF1;
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+}
+a.round-btn-inverse { 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 20px;
+  padding: 5px 40px;
+  text-align: center;
+  background: #06649a;
+  text-decoration: none;
+  color: #fff;
+}
+a.footer-link{
+  text-decoration: none;
+  color:#9d9d9d;
+}
+a.footer-link:hover{
+  color:#fff;
+}
+
+/*#card { 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); 
+  border-bottom: 5px solid transparent;
+}
+#card:hover {
+
+  border-bottom: 5px solid #ffa100;
+} */
+
+.border-left{
+  border-left:2px solid #fff;
+}
+.pad-left80{
+  padding-left:80px;
+}
+.pad-right80{
+  padding-right:80px;
+}
+#fine-print { 
+  color: rgba(0,0,0,0.4); 
+  text-align: center; 
+  font-size: 11px;
+}
+
+#services-section{
+  border-top:8px solid #fff;
+}
+
+
+@media (max-width: 600px) {
+  .bgcolor-overlay{
+    padding:2% 10% 15% 10%;
+  }
+  #services-section{
+    margin-top:55px;
+  }
+  .bgimg-1{
+    top:55px;
+  }
+
+  .bgcolor-overlay span.border{
+    font-size:18px;
+    padding:18px;
+  }
+  body, #card { margin-top: 0;box-shadow: none; }
+
+
+  .bgimg-1.container-fluid.nav-section{
+    padding:0px;
+  }
+  .intro-div{
+    padding:20px 0px 0px 0px;
+  }
+  .card-copy:before{
+    top:62px;
+    width:230px;
+  }
+  h3.blue-text-color{
+    font-size:20px;
+  }
+  .lead{
+    font-size:14px;
+    line-height: 1.6;
+  }
+
+  .content-area{padding:20px;}
+
+  .pad-right80{
+    padding-right:0px;
+    padding:30px;
+    text-align: left;
+  }
+  .pad-left80{
+    padding-left:0px;
+    border-left:none;
+  }
+
+}
+
