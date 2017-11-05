@@ -75,7 +75,7 @@ p{
 .card-copy:before{
   content:"";
   position:absolute;
-  width:290px;
+  width:69%;
   border-bottom:1px solid #474545;
   top:82px;
 }
@@ -99,13 +99,26 @@ p{
 #nav-wrapper.fixed{
   position: fixed;
 }
-
+.contact-btn-header{
+  position: absolute;
+  right:20px;
+  top:12px;
+}
 .intro-div{
   color:#fff;
   padding:20px 17% 0px 17%;
 }
 .services{
-  padding:10% 17% 0% 17%;
+  /* padding:10% 17% 0% 17%; */
+  background-color:rgba(255, 255, 255, 0.45);
+  margin:10% 3% 4% 3%;
+  width:94%;
+  padding:2% 6%;
+}
+#services-section{
+  background-image: url(img/cardboard_background.jpg);
+  background-repeat: repeat-x;
+  background-size: contain;
 }
 
 div.scrollmenu {
@@ -168,7 +181,7 @@ div.scrollmenu a:hover {
 
 
 #card { 
-  /*background: white; */
+  background: rgba(255, 255, 255, 0.45);
   max-width: 360px; 
   margin: 20px auto 16px;
   padding: 32px 24px; 
