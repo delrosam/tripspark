@@ -10,9 +10,11 @@ body {
   padding:55px 0px 0px 0px;
   display: block;
 }
+
 .bgimg-1.container-fluid{
   padding:0px;
 }
+
 .bgimg-1 {
   position: relative;
   opacity: 0.95;
@@ -103,7 +105,7 @@ p{
   padding:20px 17% 0px 17%;
 }
 .services{
-  padding:2% 17% 0% 17%;
+  padding:10% 17% 0% 17%;
 }
 
 div.scrollmenu {
@@ -159,6 +161,9 @@ div.scrollmenu a:hover {
 .color-block-darker{
   background:#535353;
 }
+
+
+
 
 
 
@@ -235,13 +240,27 @@ a.footer-link:hover{
   font-size: 11px;
 }
 
-#services-section{
+/* #services-section{
   border-top:8px solid #fff;
-}
+} */
 input.form-control,
 textarea.form-control{
   width:80%;
 }
+
+.triangle-icon{
+  position:absolute;
+  left:auto;
+
+}
+
+.torn-paper{
+  position: absolute;
+  left:0;
+  margin-top:-31px;
+  width:100%;
+}
+ 
 
 
 @media (max-width: 600px) {
