@@ -1,17 +1,22 @@
 body { 
   background: #e7d8ad; 
   color: rgba(0,0,0,0.87); 
-  font-family: Roboto, Helvetica, Arial, sans-serif; 
+  /* font-family: Roboto, Helvetica, Arial, sans-serif;  */
+  font-family: 'Open Sans Condensed', sans-serif;
   margin: 0; 
   padding: 0; 
 }
 
-.bgimg-1.container-fluid.nav-section{
+.bgimg-1.container-fluid.nav-section,
+.bg-about-section.container-fluid.nav-section,
+.bg-contact-section.container-fluid.nav-section{
   padding:55px 0px 0px 0px;
   display: block;
 }
 
-.bgimg-1.container-fluid{
+.bgimg-1.container-fluid,
+.bg-about-section.container-fluid,
+.bg-contact-section.container-fluid{
   padding:0px;
 }
 
@@ -20,10 +25,31 @@ body {
   opacity: 0.95;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-image: url("titlebackground_keyboard.jpg");
+  background-image: url("img/titlebackground_keyboard.jpg");
   /*min-height: 100%;*/
   background-position:top center;
 }
+.bg-about-section{
+  position: relative;
+  opacity: 0.95;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("img/titlebackground_bamboo.jpg");
+  /*min-height: 100%;*/
+  background-position:top center;
+}
+.bg-contact-section{
+  position: relative;
+  opacity: 0.95;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("img/titlebackground_pebbles.jpg");
+  /*min-height: 100%;*/
+  background-position:top center;
+}
+
+
+/**/
 
 .bgimg-divider{
   position: relative;
@@ -55,7 +81,7 @@ h2{
   margin: 0 0 16px;
 }
 h3{ 
-  font-size: 22px; 
+  font-size: 18px; 
   font-weight: 400; 
   color: rgba(0,0,0,0.6); 
   margin: 0 0 16px;
@@ -66,19 +92,22 @@ h4{
   font-size: 16px; 
   margin: 0 0 8px;
 }
+h5{
+  font-size:12px;
+}
 p{
   line-height: 1.8;
 }
 .blue-text-color{
   color: #06649a;
 }
-.card-copy:before{
+/* .card-copy::before{
   content:"";
   position:absolute;
-  width:69%;
+  width:200px;;
   border-bottom:1px solid #474545;
   top:82px;
-}
+} */
 .lead{
   font-size:18px;
   line-height: 1.8;
@@ -117,7 +146,7 @@ p{
 }
 #services-section{
   background-image: url(img/cardboard_background.jpg);
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   background-size: contain;
 }
 
@@ -177,7 +206,9 @@ div.scrollmenu a:hover {
 
 
 
-
+.member-photo{
+  width:100%;
+}
 
 
 #card { 
@@ -194,6 +225,7 @@ div.scrollmenu a:hover {
 p.persons-role{
   font-size:18px !important;
   margin:0px !important;
+  line-height:1.3;
 }
 h3.person-name{
   margin:0px !important;
@@ -282,14 +314,19 @@ textarea.form-control{
     width:100% !important;
   }
   .bgcolor-overlay{
-    padding:2% 10% 15% 10%;
+    padding:12% 10% 15% 10%;
   }
-  #services-section{
+
+  /* #services-section{
     margin-top:55px;
-  }
-  .bgimg-1{
+  } */
+  .bgimg-index{
     top:55px;
   }
+
+  /* #services-section{
+    padding-top:86px;
+  } */
 
   .bgcolor-overlay span.border{
     font-size:18px;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contract TripleSpark Design</title>
+    <title>Contact TripleSpark Design</title>
 
 
     <script src="jquery-3.2.1.min.js"></script>
@@ -21,7 +21,8 @@
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <!-- GLOBAL Style -->
     <link rel="stylesheet" type="text/css" href="global.css">
 
@@ -48,40 +49,69 @@
 
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <div class="header">
+  <!-- Navigation Bar -->
+  <div class="header">
       <div class="company-logo">
-        <a class="navbar-brand" href="#"><img class="team-logo" src="img/sparklogo_v2.png" alt="Triple Spark Design Logo" /></a>
+        <a class="navbar-brand" href="/index.html"><img class="team-logo" src="img/sparklogo_v2.png" alt="Triple Spark Design Logo" /></a>
+        <a class="round-btn contact-btn-header" target="_blank" href="/contact.html">Contact</a>
       </div>
-     <!--  <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+      <!--  <div class="navbar-collapse collapse" id="navbarCollapse" style="">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Contact</button>
       </div>-->
- 
-    </div>
+  </div>
 
 
-    <div id="nav-wrapper" class="bgimg-1 container-fluid nav-section">
+    <div id="nav-wrapper" class="bg-contact-section container-fluid nav-section">
 
       <div class="bgcolor-overlay">
           <div class="nav-div text-center scrollmenu">
-                <a class="link" id="linkOne" href="#">Home</a>
-                <a class="link" id="linkTwo" href="#">About</a>
-                <a class="link" id="linkThree" href="#">Our Work</a>
-                <a class="link" id="linkFour" href="#">Contact</a>
+                <a class="link" id="linkOne" href="/index.html">Home</a>
+                <a class="link" id="linkTwo" href="/about.html">About</a>
+                <!-- <a class="link" id="linkThree" href="#">Our Work</a> -->
+                <a class="link" id="linkFour" href="/contact.html">Contact</a>
           </div>
       </div>
 
     </div>
 
-    <div id="blue-area" class="bgimg-1 container-fluid">
+    <div id="blue-area" class="bg-contact-section container-fluid">
       <div class="bgcolor-overlay">
         <div class="text-center intro-div">
           <h2 class="inverse-color">Contact Us</h2>
-          <p class="lead">Thanks for reaching out to us! If you're an existing client with an existing question or someone interested in what we can do please don't hesitate to get in touch. Here's a few ways to get in touch.</p>
-          <p>Phone: (XXX) XXX-XXXX</p>
-          <p>Email: TripleSparkDesign@gmail.com</p>
+          <p class="lead">Thanks for reaching out to us! If you're an existing client with a question or someone interested in what we can do please don't hesitate to contact us. Scroll down for a few ways to get in touch.</p>
+          
         </div>
       </div>
+    </div>
+
+
+    <div id="services-section" class="container-fluid content-area">
+        <img src="img/torn_paper.png" alt="Torn paper divider" class="torn-paper"/>
+      <div class="text-center services">
+        <h2>Contact Us</h2>
+      </div>
+
+      <div class="col-md-12">
+        <div class="col-md-6 text-center">
+                <div id="card">
+                  <p><a href="mailto:triplesparkdesign@gmail.com"><img src="img/email-icon.png" style="width:20%;" alt="Image email"/></p>
+                  <h5>triplesparkdesign@gmail.com</h5>
+                </div>
+        </div>
+        <div class="col-md-6 text-center">
+                <div id="card">
+                  <p><a href="tel:206-779-0741"><img src="img/phone-Icon.png" style="width:20%;" alt="Image phone"/></a></p>
+                  <h5><a href="tel:206-779-0741">(206) 779-0741</a></h5>
+                </div>
+        </div>
+        <!-- <div class="col-md-4 text-center">
+                <div id="card">
+                  <p><img src="img/pigeon-icon.png" class="member-photo" alt="Image pigeon"/></p>
+                  <p>Lead Developer</p>
+                </div>
+        </div> -->
+    </div>
+
     </div>
 
 <!-- 
@@ -124,34 +154,36 @@
 
 
 
-
     <footer class="container-fluid content-area color-block-darker inverse-color footer-section">
-       <div class="col-md-4 text-right pad-right80">
-          <img class="team-logo" src="img/sparklogo_v2.png" alt="Triple Spark Design Logo" />
-          <p><a class="footer-link" href="#">(555)555-555</a></p>
-          <p><a class="footer-link" href="mailto:email@email.com">Email@email.com</a></p>
-       </div>
-       <div class="col-md-8">
-         <div class="col-sm-4 border-left text-left pad-left80">
-            <h3 class="inverse-color">Our Work</h3>
-            <p><a class="footer-link" href="#">WordPlay</a></p>
-            <p><a class="footer-link" href="#">Website 2</a></p>
-            <p><a class="footer-link" href="#">Website 3</a></p>
-            <p><a class="footer-link" href="#">Website 4</a></p>
-         </div>
-         <div class="col-sm-4 text-left pad-left80">
-            <h3 class="inverse-color">Our Team</h3>
-            <p><a class="footer-link" href="#">Verna</a></p>
-            <p><a class="footer-link" href="#">Marnel</a></p>
-            <p><a class="footer-link" href="#">Nick</a></p>
-         </div>
-         <div class="col-sm-4 text-left pad-left80">
-            <h3 class="inverse-color">Social Media</h3>
-            <p><a class="footer-link" href="#">Facebook</a></p>
-            <p><a class="footer-link" href="#">LinkedIn</a></p>
-         </div>
-       </div>
-    </footer>
+        <div class="col-md-4 text-right pad-right80">
+           <p><img class="team-logo" src="img/sparklogo_v2.png" alt="Triple Spark Design Logo" /></p>
+           <p><a class="footer-link" href="tel:206-779-0741">(206)779-0741</a></p>
+           <p><a class="footer-link" href="mailto:triplesparkdesign@gmail.com">triplesparkdesign@gmail.com</a></p>
+        </div>
+        <div class="col-md-8">
+          <!-- <div class="col-sm-4 border-left text-left pad-left80">
+             <h3 class="inverse-color">Our Work</h3>
+             <p><a class="footer-link" href="#">WordPlay</a></p>
+             <p><a class="footer-link" href="#">Website 2</a></p>
+             <p><a class="footer-link" href="#">Website 3</a></p>
+             <p><a class="footer-link" href="#">Website 4</a></p>
+          </div> -->
+          <div class="col-sm-6 text-left pad-left80">
+             <h3 class="inverse-color">Our Team</h3>
+             <p><a class="footer-link" href="#">Verna</a></p>
+             <p><a class="footer-link" href="#">Marnel</a></p>
+             <p><a class="footer-link" href="#">Nick</a></p>
+          </div>
+          <div class="col-sm-6 text-left pad-left80">
+             <h3 class="inverse-color">Social Media</h3>
+             <!-- <p><a class="footer-link" href="#"><img src="img/social-facebook.png" style="width:10%;" alt="Facebook logo" /></a>    -->
+             <p>
+             <a class="footer-link" href="https://www.instagram.com/triplesparkdesign/" target="_blank"><img src="img/social-instagram.png" style="width:10%;" alt="Instagram logo" /></a>   
+             <a class="footer-link" href="https://twitter.com/3sparkdesign" target="_blank"><img src="img/social-twitter.png"  style="width:10%;" alt="Twitter logo" /></a></p>
+          </div>
+        </div>
+     </footer>
+
 
 
     <script>
